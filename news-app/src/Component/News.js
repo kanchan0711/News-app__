@@ -150,7 +150,7 @@ export class News extends Component {
             <>
                 <div className='container my-3'>
                   <h1 className="text-center" style={{margin:"40px 0px"}}>NewsMonkey - Top Headlines</h1>
-                  {this.state.loading && <Spinner/>} {/**  it says that if loading is true then show spinner otherwise not */}
+                  {/** {this.state.loading && <Spinner/>}  it says that if loading is true then show spinner otherwise not */}
                     <div className="row">
        {!this.state.loading && this.state.articles.map((element)=>{  {/**it says when loading is  false then show the cart content otherwise not */}
              return  <div className="col-md-4 my-4" key={element.url}>
